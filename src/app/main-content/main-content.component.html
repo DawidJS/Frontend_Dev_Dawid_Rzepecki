@@ -1,0 +1,7 @@
+<h2>Airlines list:
+    <ul>
+        <li *ngFor="let air of airlines; let odd = odd" [class.odd]="odd">
+            Airline name: <b>{{air.name}}</b>,  ICAO
+            code: <b>{{air.icao_code}}</b>, IATA code: <b>{{air.iata_code}}</b></li>
+    </ul>
+</h2>
